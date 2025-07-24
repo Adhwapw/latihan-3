@@ -1,0 +1,25 @@
+/* 1. Impor Font dari Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+/* 2. Definisikan Variabel (Custom Properties) */
+:root {
+  --color-green: hsl(75, 94%, 57%);
+  --color-white: hsl(0, 0%, 100%);
+  --color-grey-700: hsl(0, 0%, 20%);
+  --color-grey-800: hsl(0, 0%, 12%);
+  --color-grey-900: hsl(0, 0%, 8%);
+}
+
+/* 3. Atur Gaya Dasar untuk Body */
+body {
+  background-color: var(--color-grey-900); /* Warna latar belakang paling gelap */
+  font-family: 'Inter', sans-serif;
+  font-size: 14px; /* Ukuran font dasar sesuai panduan gaya */
+  color: var(--color-white); /* Warna teks default putih */
+
+  /* Menengahkan kartu di tengah halaman */
+  min-height: 100vh;
+  display: grid;
+  place-content: center;
+  margin: 0;
+}

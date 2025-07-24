@@ -1,43 +1,65 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <title>Frontend Mentor | Social links profile</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        // Menambahkan warna kustom dari style-guide.md
+        colors: {
+          green: 'hsl(75, 94%, 57%)',
+          'grey-900': 'hsl(0, 0%, 8%)',
+          'grey-800': 'hsl(0, 0%, 12%)',
+          'grey-700': 'hsl(0, 0%, 20%)',
+        },
+        // Mengatur font default
+        fontFamily: {
+          sans: ['Inter', 'sans-serif'],
+        }
+      }
+    }
+  }
+</script>
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  </head>
+<body class="bg-grey-900 text-white font-sans grid place-content-center min-h-screen">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Social links profile</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
-
-  <main class="profile-card">
-    <img src="./assets/images/avatar-jessica.jpeg" alt="Profile" class="profile-card-avatar">
-
-    <div class="profile-card-info">
-      <h1 class="profile-card-name">Jessica Randall</h1>
-      <p class="profile-card-location">London, United Kingdom</p>
+  <main class="bg-grey-800 max-w-sm w-full mx-4 p-10 rounded-xl flex flex-col items-center text-center">
+    
+    <img src="./assets/images/avatar-jessica.jpeg" alt="Jessica Randall's avatar" class="rounded-full h-24 w-24 mb-6">
+    
+    <div class="mb-6">
+      <h1 class="text-2xl font-semibold">Jessica Randall</h1>
+      <p class="text-green text-sm font-bold mt-1">London, United Kingdom</p>
+    </div>
+    
+    <p class="mb-6">"Front-end developer and avid reader."</p>
+    
+    <div class="flex flex-col w-full gap-4">
+      <a href="#" class="bg-grey-700 w-full p-3 rounded-lg font-bold hover:bg-green hover:text-grey-900 transition-colors duration-300">GitHub</a>
+      <a href="#" class="bg-grey-700 w-full p-3 rounded-lg font-bold hover:bg-green hover:text-grey-900 transition-colors duration-300">Frontend Mentor</a>
+      <a href="#" class="bg-grey-700 w-full p-3 rounded-lg font-bold hover:bg-green hover:text-grey-900 transition-colors duration-300">LinkedIn</a>
+      <a href="#" class="bg-grey-700 w-full p-3 rounded-lg font-bold hover:bg-green hover:text-grey-900 transition-colors duration-300">Twitter</a>
+      <a href="#" class="bg-grey-700 w-full p-3 rounded-lg font-bold hover:bg-green hover:text-grey-900 transition-colors duration-300">Instagram</a>
     </div>
 
-    <p class="profile-card-bio">Front End developer and avid reader</p>
-
-    <div class="profile-card-link">
-      <a href="#" class="profile-card-link">Github</a>
-      <a href="#" class="profile-card-link">Front End Mentor</a>
-      <a href="#" class="profile-card-link">LinkedIn</a>
-      <a href="#" class="profile-card-link">Twitter</a>
-      <a href="#" class="profile-card-link">Instagram</a>
-    </div>
   </main>
-
-  <footer class="attribution">
+  
+  <footer class="attribution" style="display: none;">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Adhwa Pranaja Widyadana</a>.
+    Coded by <a href="#">Your Name Here</a>.
   </footer>
+
 </body>
 </html>
